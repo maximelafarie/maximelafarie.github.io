@@ -1,0 +1,60 @@
+---
+layout: solo
+---
+<article class="post single">
+  <header class="post__header">
+    <h1 class="alpha post__title" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+    <span class="post__meta">
+    	<time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    		{{ page.date | date: "%b %-d, %Y" }}
+    	</time>
+    	{% if page.path %}
+      -
+        {% for tag in page.tags %}
+          <a href="/blog/tags#{{ tag | slugify }}" class="post__tags__mark">#{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+      -
+      <a class="post__edit" href="//github.com/maximelafarie/maximelafarie.github.io/blob/master/{{ page.path }}">
+        Contribute to this page on GitHub
+      </a>
+    </span>
+    <div class="post__meta__divider"></div>
+  </header>
+  <section class="post__content">
+    {{ content }}
+  </section>
+  <div class="share">
+    <div class="addthis_sharing_toolbox"></div>
+  </div>
+</article>
+
+<div class="author">
+  <div class="author__content">
+    <div class="author__pic">
+      <img src="{{ site.baseurl }}/img/maxime.jpg" alt="Maxime Lafarie">
+    </div>
+    <div class="author__bio">
+      <p>
+        I'm Maxime, french front end developer specialized in <a target="_blank" href="https://angular.io/">Angular</a>
+          and <a target="_blank" href="http://www.highcharts.com/">Highcharts</a>. I write some articles about whatever.
+      </p>
+      <a href="https://twitter.com/MAADM4X" class="twitter-follow-button" data-show-count="true"></a>
+    </div>
+  </div>
+</div>
+
+<div class="disqus">
+  <div id="disqus_thread"></div>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-567a0f80a03a6fbe" async></script>
+<script>
+  var disqus_url = ({%if page.disqus %}'{{ page.disqus }}'{%else %}'http://maximelafarie.com{{ page.url }}'{% endif %}).replace(/\/$/, '');
+  var disqus_title = '{{ page.title }}';
+  var disqus_shortname = 'maximelafarie';
+  var dsq = document.createElement('script');
+  dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  document.getElementsByTagName('head')[0].appendChild(dsq);
+</script>

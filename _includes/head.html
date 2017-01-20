@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}" >
+  <title>{% if page.title %}{{ page.title }}{% else %}Maxime Lafarie / Développeur Web AngularJS à La Rochelle{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="Maxime Lafarie">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+  <link href='//fonts.googleapis.com/css?family=Raleway:500,800,300' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.title %}
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/img/maxime.jpg">
+  <meta property="og:publisher" content="https://www.facebook.com/maximelafarie">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MAADM4X">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/img/og.jpg">
+  {% endif %}
+</head>

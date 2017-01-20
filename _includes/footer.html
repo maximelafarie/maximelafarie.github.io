@@ -1,0 +1,40 @@
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__copyright">
+      &copy; {{ site.time | date: '%Y' }} - Maxime Lafarie
+    </div>
+    <div class="footer__links">
+      <ul>
+        <li>
+          <a href="//twitter.com/MAADM4X" target="_blank">
+            <img src="{{ site.baseurl }}/img/icons/twitter.svg" alt="Maxime Lafarie on Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="//github.com/maximelafarie" target="_blank">
+            <img src="{{ site.baseurl }}/img/icons/github.svg" alt="Maxime Lafarie on GitHub">
+          </a>
+        </li>
+        <li>
+          <a href="//www.linkedin.com/in/maximelafarie" target="_blank">
+            <img src="{{ site.baseurl }}/img/icons/linkedin.svg" alt="Maxime Lafarie on LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="/feed.xml" target="_blank">
+            <img src="{{ site.baseurl }}/img/icons/rss.svg" alt="RSS feed for Maxime Lafarie">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="./js/bundle.min.js?{{site.time | date: '%s%N'}}"></script>
+<script>
+(function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=r;A[l]=A[l]||function(){
+(A[l].q=A[l].q||[]).push(arguments)},A[l].l=1*new Date();a=n.createElement(g),
+r=n.getElementsByTagName(g)[0];a.async=1;a.src=u;r.parentNode.insertBefore(a,r)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-57192566-1', 'maximelafarie.com');
+ga('send', 'pageview');
+</script>

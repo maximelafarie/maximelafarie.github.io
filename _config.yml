@@ -1,0 +1,22 @@
+# Site settings
+title: 'Maxime Lafarie / Développeur Web AngularJS à La Rochelle'
+email: maxime.lafarie@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Maxime Lafarie, front-end developer AngularJS / JavaScript in La Rochelle, France. Freelancer. Articles on Javascript.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://maximelafarie.com" # the base hostname & protocol for your site
+twitter_username: MAADM4X
+github_username:  maximelafarie
+exclude: ['node_modules']
+paginate: 10
+paginate_path: "/page:num/"
+permalink: /:year/:month/:title
+sass:
+  compressed: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Gems
+gems: [jekyll-paginate]

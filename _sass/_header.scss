@@ -1,0 +1,150 @@
+/*
+ * HEADER
+ */
+.header {
+  padding: 48px 0 0 0;
+  z-index: 5;
+  color: #fff;
+  background-color: $licorice;
+  /*background-image: -webkit-gradient(linear,left top,right bottom,from(#9D62C7),to(#855cc7));
+  background-image: -webkit-linear-gradient(top left,#9D62C7,#855cc7);
+  background-image: linear-gradient(to bottom right,#9D62C7,#855cc7);*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  @media screen and (max-width: 725px) {
+    text-align: center;
+    min-width: 100%;
+    display: block;
+    padding: 48px 0;
+  }
+  p {
+    a {
+      text-decoration: none;
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+    }
+  }
+  &__img {
+    /*display: table-cell;
+    vertical-align: top;*/
+    display: inline-block;
+    min-width: 120px;
+    @media screen and (max-width: 725px) {
+      width: 120px;
+      margin: 0 auto;
+      display: block;
+    }
+    a {
+      display: block;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      max-height: 120px;
+      border: solid $pear;
+    }
+  }
+  &__bio {
+    /*display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 24px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    p {
+      margin: 0 0 8px 0;
+    }
+    @media screen and (max-width: 725px) {
+      display: none;
+    }
+  }
+}
+
+
+
+/*
+ * NAV
+ */
+.nav {
+  font-family: $font--open-sans--reg;
+  background: $licorice;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  ul {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 788px;
+  }
+  li {
+    float: left;
+    width: 25%;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    padding: 24px 30px;
+    font-size: 13px;
+    @media screen and (max-width: 500px) {
+      padding: 15px 0;
+    }
+    &:hover {
+      color: $pear;
+    }
+  }
+  @media screen and (min-width: 724px) {
+    /* Remove margin in responsive mode to avoid extra skew compensation */
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+
+    &:before {
+      z-index: 1;
+      background: $pear;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1.6em;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      -webkit-transform: skewY(-1.2deg);
+      -ms-transform: skewY(-1.2deg);
+      transform: skewY(-1.2deg);
+      -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+      transform-origin: bottom left;
+    }
+    &:after {
+      z-index: 0;
+      background: $licorice;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1.7em;
+      position: absolute;
+      top: 128%;
+      left: 0;
+      -webkit-transform: skewY(-1.7deg);
+      -ms-transform: skewY(-1.7deg);
+      transform: skewY(-1.7deg);
+      -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+      transform-origin: bottom left;
+    }
+  }
+}
+
