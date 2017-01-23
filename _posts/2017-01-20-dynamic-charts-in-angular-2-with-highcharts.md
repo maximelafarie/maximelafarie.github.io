@@ -11,7 +11,7 @@ tags: [Angular 2, Highcharts]
 > In this article I'm using Angular 2 with **TypeScript** and **ES5** so if you don't understand what it is, I recommend you this [John Papa awesome article](//johnpapa.net/es5-es2015-typescript/). I'm also using [SystemJS](//github.com/systemjs/systemjs#readme) and not [Webpack](//webpack.github.io/docs/). If you don't know what **SystemJS** and **Webpack** means, follow the previous links. To my mind it's easier to work with **SystemJS** but it's you to choose which one you want to use.
 
 Our starting point will be the below Plunker which is actually a simple Highcharts instance wrapped into an Angular 2 component. (I'll write an article about that later!)
-<iframe style="width: 100%; height: 520px" src="https://embed.plnkr.co/0qicjW?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 520px" src="//embed.plnkr.co/0qicjW?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
 > All the following code comes from the `app.component.ts` file (in the above Plunker example).
 
@@ -127,6 +127,6 @@ The second and third arguments are `Boolean` values designed to tell the functio
 Then the fourth and last argument is an animation which defaults to true. When true, the graph will be animated with default animation options. The animation can also be a configuration object with properties duration and easing. So there is no need to set it.
 
 Final working solution
-<iframe style="width: 100%; height: 520px" src="https://embed.plnkr.co/lGzThF?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 520px" src="embed.plnkr.co/lGzThF?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
 Feel free to ask any questions you may have!

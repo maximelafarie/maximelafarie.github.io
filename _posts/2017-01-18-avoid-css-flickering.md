@@ -14,8 +14,8 @@ If you have several HTML elements that are nested into a common element (the par
 
 Here's an example of what a flickering effect is :
 <video playsinline autoplay loop>
-    <source src="samples/css-flickering/css-flickering.webm" type="video/webm">
-    <source src="samples/css-flickering/css-flickering.mp4" type="video/mp4">
+    <source src="./samples/css-flickering/css-flickering.webm" type="video/webm">
+    <source src="./samples/css-flickering/css-flickering.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
 
@@ -45,7 +45,7 @@ Why is this rule better that the previous one ?
 
 Et voila! Here is the final result: 
 <video playsinline autoplay loop>
-    <source src="samples/css-flickering/css-no-flickering.webm" type="video/webm">
-    <source src="samples/css-flickering/css-no-flickering.mp4" type="video/mp4">
+    <source src="./samples/css-flickering/css-no-flickering.webm" type="video/webm">
+    <source src="./samples/css-flickering/css-no-flickering.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>

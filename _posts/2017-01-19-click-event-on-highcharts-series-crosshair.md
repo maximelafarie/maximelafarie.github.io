@@ -8,11 +8,11 @@ ref: click-event-on-highcharts-series-crosshair
 tags: [Javascript, Highcharts]
 ---
 
-> [Highcharts](http://www.highcharts.com/) is a very powerful charting library written in pure JavaScript, offering an easy way of adding interactive charts to your web site or web application. Highcharts currently supports a lot of chart types such as line, spline, area, areaspline, column, bar, pie, scatter, angular gauges, arearange and so on.
+> [Highcharts](//www.highcharts.com/) is a very powerful charting library written in pure JavaScript, offering an easy way of adding interactive charts to your web site or web application. Highcharts currently supports a lot of chart types such as line, spline, area, areaspline, column, bar, pie, scatter, angular gauges, arearange and so on.
 
 ### Preface
 
-> If you don't already knew it, you can attach events on several Highcharts components like legend, tooltips, series and especially series points but not on a series **crosshair**. If you don't know charts series events you can learn more about it [here (line charts events)](http://api.highcharts.com/highcharts/series%3Cline%3E.data.events).
+> If you don't already knew it, you can attach events on several Highcharts components like legend, tooltips, series and especially series points but not on a series **crosshair**. If you don't know charts series events you can learn more about it [here (line charts events)](//api.highcharts.com/highcharts/series%3Cline%3E.data.events).
 
 <iframe width="100%" height="467" src="//jsfiddle.net/maximelafarie/gmxpucud/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -23,7 +23,7 @@ So now you get the concept, the goal is to attach a **click** event on a series 
 
 ### Step 1: What do we really want
 
-Firstly, we need to define what we want to do: easy you say ? You're right! Highchars comes with its own utility called `wrap`, which wraps an existing prototype method and allows you to add your own code before or after it.  So the solution is to [extend Highcharts](http://www.highcharts.com/docs/extending-highcharts/extending-highcharts)'s `drawCrosshair` method and add our own event function!
+Firstly, we need to define what we want to do: easy you say ? You're right! Highchars comes with its own utility called `wrap`, which wraps an existing prototype method and allows you to add your own code before or after it.  So the solution is to [extend Highcharts](//www.highcharts.com/docs/extending-highcharts/extending-highcharts)'s `drawCrosshair` method and add our own event function!
 
 ### Step 2: Let's code it!
 
