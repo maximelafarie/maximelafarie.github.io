@@ -127,6 +127,6 @@ The second and third arguments are `Boolean` values designed to tell the functio
 Then the fourth and last argument is an animation which defaults to true. When true, the graph will be animated with default animation options. The animation can also be a configuration object with properties duration and easing. So there is no need to set it.
 
 Final working solution
-<iframe style="width: 100%; height: 520px" src="embed.plnkr.co/lGzThF?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 520px" src="//embed.plnkr.co/lGzThF?show=preview" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
 Feel free to ask any questions you may have!
